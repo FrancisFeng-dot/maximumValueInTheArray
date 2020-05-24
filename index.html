@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ddd</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	
+</body>
+</html>
+<script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	var arr = [11,23,332,24,134,3134,83,665,22,74];
+    for(var i=0;i<10;i++){
+	    var resArry = [];
+    	resArry = arr[i].toString(2).split('');
+	    for (var r = resArry.length; r < 32; r++) {
+	        resArry.unshift(0);
+	    }
+	    arr[i] = resArry;
+    }
+    digitalsort(arr,0);
+</script>
